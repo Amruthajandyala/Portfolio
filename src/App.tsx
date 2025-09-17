@@ -186,7 +186,7 @@ function App() {
               </h3>
               
               <a
-                href="https://drive.google.com/drive/home"
+                href="https://drive.google.com/file/d/1Yym8vJkTTBTmjq_t0XlA1x34Ik_I7QgM/view"
                 className="inline-flex items-center gap-2 bg-cyan-400 hover:bg-cyan-500 text-slate-900 font-bold py-3 px-6 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-cyan-400/50"
               >
                 <FileText size={20} />
