@@ -4,6 +4,8 @@ import pic from './pic.jpeg';
 import pro from './pro.jpeg';
 import chat from './chat.png';
 import chatImg from './chat.png';
+import img from './ChatGPT Image Sep 17, 2025, 03_59_12 PM.png';
+import image from './ChatGPT Image Sep 17, 2025, 04_04_56 PM.png';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -78,11 +80,29 @@ function App() {
   const projects = [
     {
       title: 'Shell with C',
-      description : "To design and implement a custom Linux Shell in C that demonstrates core operating system concepts such as command parsing, process creation (fork/exec), I/O redirection, and piping. This project highlights hands-on experience with system calls, process management, and user-space programming, bridging the gap between OS theory and practical implementation.",
+      description : "To design and implement a custom Linux Shell in C that demonstrates core operating system concepts such as command parsing, process creation (fork/exec), I/O redirection, and piping.",
       image: chatImg,
       link: 'https://github.com/Amruthajandyala/os-project',
       tech: ['Shell', 'C', 'Commands']
     },
+
+    {
+      title: 'OS Schedulers',
+      description: 'To implement and simulate CPU scheduling algorithms like FCFS, SJF, Priority, and Round Robin in C to understand how modern operating systems manage process scheduling.',
+      image: img,
+      link: 'https://github.com/Amruthajandyala/os-schedulers',
+      tech: ['Ubuntu', 'Linux', 'C']
+    },
+
+    {
+      title: 'AI CHATBOT',
+      description: 'Developed an AI-powered chatbot integrated with the DeepSeek API using JavaScript. Implemented real-time conversational flow with natural language responses.',
+      image: image,
+      link: 'https://github.com/Amruthajandyala/CHATBOT',
+      tech: ['HTML', 'CSS', 'JavaScript']
+    },
+
+
     {
       title: 'Emoji Generator',
       description: 'A dynamic Emoji Generator built using HTML, CSS, and JavaScript! An interactive tool that allows users to generate a variety of emojis by simply clicking a button.',
@@ -94,9 +114,11 @@ function App() {
       title: 'Interactive Quiz',
       description: 'An interactive quiz designed to enhance user engagement and provide a fun learning experience! Dynamically calculates the score and percentage based on user responses.',
       image: 'https://images.pexels.com/photos/5428836/pexels-photo-5428836.jpeg?auto=compress&cs=tinysrgb&w=400',
-      link: '#',
+      link: 'https://github.com/Amruthajandyala/INTERACTIVE-QUIZ-APPLICATION',
       tech: ['HTML', 'CSS', 'JavaScript']
-    }
+    },
+
+    
   ];
 
   return (
@@ -164,7 +186,7 @@ function App() {
               </h3>
               
               <a
-                href="#"
+                href="https://drive.google.com/drive/home"
                 className="inline-flex items-center gap-2 bg-cyan-400 hover:bg-cyan-500 text-slate-900 font-bold py-3 px-6 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-cyan-400/50"
               >
                 <FileText size={20} />
