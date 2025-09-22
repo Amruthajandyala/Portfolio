@@ -218,7 +218,7 @@ function App() {
             <div className="flex-1">
               <div className="relative max-w-md mx-auto">
                   <img
-                  src={pic}
+                  src={pro}
                   alt="About me"
                   className="w-full h-full object-cover"
                   />
