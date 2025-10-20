@@ -348,7 +348,7 @@ function App() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20">
+      {/* <section id="contact" className="py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
             Contact <span className="text-cyan-400">Me!</span>
@@ -407,6 +407,82 @@ function App() {
                 className="w-full px-4 py-3 bg-slate-800 border border-slate-600 rounded-lg focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-colors resize-none"
               ></textarea>
               
+              <div className="text-center">
+                <button
+                  type="submit"
+                  className="bg-cyan-400 hover:bg-cyan-500 text-slate-900 font-bold py-3 px-8 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-cyan-400/50 transform hover:scale-105"
+                >
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section> */}
+
+      {/* Contact Section */}
+      <section id="contact" className="py-20">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
+            Contact <span className="text-cyan-400">Me!</span>
+          </h2>
+
+          <div className="max-w-4xl mx-auto">
+            <form
+              action="https://formsubmit.co/jandyalaamrutha@gmail.com"
+              method="POST"
+              className="space-y-6"
+            >
+              <input type="hidden" name="access_key" value="10925e9c-6fa6-433c-8a1c-2f0b54ecbe31" />
+
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="relative">
+                  <User className="absolute left-3 top-3 text-gray-400" size={20} />
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Full Name"
+                    required
+                    className="w-full pl-12 pr-4 py-3 bg-slate-800 border border-slate-600 rounded-lg focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-colors"
+                  />
+                </div>
+                <div className="relative">
+                  <Mail className="absolute left-3 top-3 text-gray-400" size={20} />
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Email Address"
+                    required
+                    className="w-full pl-12 pr-4 py-3 bg-slate-800 border border-slate-600 rounded-lg focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-colors"
+                  />
+                </div>
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="relative">
+                  <Phone className="absolute left-3 top-3 text-gray-400" size={20} />
+                  <input
+                    type="tel"
+                    name="phone"
+                    placeholder="Mobile Number"
+                    className="w-full pl-12 pr-4 py-3 bg-slate-800 border border-slate-600 rounded-lg focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-colors"
+                  />
+                </div>
+                <input
+                  type="text"
+                  name="subject"
+                  placeholder="Email Subject"
+                  className="w-full px-4 py-3 bg-slate-800 border border-slate-600 rounded-lg focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-colors"
+                />
+              </div>
+
+              <textarea
+                name="message"
+                rows={6}
+                placeholder="Your Message"
+                className="w-full px-4 py-3 bg-slate-800 border border-slate-600 rounded-lg focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-colors resize-none"
+              ></textarea>
+
               <div className="text-center">
                 <button
                   type="submit"
